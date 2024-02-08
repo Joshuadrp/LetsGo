@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   min-height: 100vh;
-  background:#f1f1f1;
+  background: #f1f1f1;
   /* Generic project styles */
   /* color: #3a3a3a; */
   font-family: "Roboto", sans-serif;
@@ -22,7 +22,7 @@ body {
 
 /* Header */
 header {
-  background:#f1f1f1;
+  background: #f1f1f1;
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -62,8 +62,8 @@ header a {
   display: none;
 }
 
-.active{
-  color:#6d6875
+.active {
+  color: #6d6875;
 }
 
 /* Dropdown menu */
@@ -95,42 +95,42 @@ main {
 
 /* Footer */
 footer {
-  background:#393e46;
+  background: #393e46;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-#about{
+#about {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 5px 5px 5px 5px;
-  gap:2px;
+  gap: 2px;
   width: 100%;
   align-items: center;
 }
 
-#footer-icons{
+#footer-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 5px 5px 5px 5px;
-  gap:10px;
+  gap: 10px;
   width: 100%;
   align-items: center;
 }
-#footer-icons > h4{
+#footer-icons > h4 {
   color: #f1f1f1;
   width: 100%;
   text-align: center;
 }
-#footer-icons > a{
+#footer-icons > a {
   color: #f1f1f1;
 }
 
-#about > a{
+#about > a {
   text-decoration: none;
   color: #f1f1f1;
 }
@@ -167,21 +167,22 @@ footer {
   }
 
   /* footer for tablets and -- desktops?*/
-  #about{
+  #about {
     justify-content: flex-start;
+    font-size: 120%;
   }
 
-  #footer-icons{
+  #footer-icons {
     justify-content: flex-end;
     padding-right: 20px;
+    font-size: 120%;
   }
-  #footer-icons > h4{
+  #footer-icons > h4 {
     text-align: end;
   }
 
-  .footer{
+  .footer {
     border-right: 1px solid #f1f1f1;
     padding-right: 10px;
   }
-
 }
