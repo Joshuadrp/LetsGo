@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   min-height: 100vh;
-  background-color: lightcoral;
+  background:#f1f1f1;
   /* Generic project styles */
   /* color: #3a3a3a; */
   font-family: "Roboto", sans-serif;
@@ -22,7 +22,7 @@ body {
 
 /* Header */
 header {
-  background-color: lightblue;
+  background:#f1f1f1;
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -39,22 +39,36 @@ header a {
   color: inherit;
 }
 
-
 #navigation {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 5px;
+  margin-bottom: 5px;
 }
 
-.nav-l{
-    margin-left:8px;
-    font-weight: 500;
+.nav-l {
+  margin-left: 8px;
+  font-weight: 500;
+  border-right: 2px solid #6d6875;
+  padding-right: 6px;
+}
+.nav-s {
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+#favicon-if {
+  display: none;
+}
+
+.active{
+  color:#6d6875
 }
 
 /* Dropdown menu */
 nav {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   width: 100%;
   box-shadow: 0 2px 2px #3a3a3a;
   display: none;
@@ -71,16 +85,48 @@ nav {
   font-size: 2rem;
 }
 
-
-
 /* Main content */
 main {
   background-color: lightgreen;
   flex: 1 0 auto;
-  margin-top: 60px;
+  margin-top: 65px;
+  overflow-y: auto;
 }
 
 /* Footer */
 footer {
   background-color: lightyellow;
+}
+
+/* Media Query for tablet size */
+
+@media screen and (min-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+  header > a {
+    padding-left: 10px;
+    font-size: 120%;
+  }
+  #favicon-if {
+    display: inline;
+  }
+  #navigation {
+    margin-bottom: 0;
+  }
+  nav {
+    display: block;
+    box-shadow: none;
+    width: fit-content; /* Key to get nav to the right*/
+    padding-right: 15px;
+    font-size: 120%;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+  /* Main styles for after */
+  main {
+    margin-top: 45px;
+  }
 }
