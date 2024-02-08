@@ -39,9 +39,11 @@ header a {
   color: inherit;
 }
 
+
 #navigation {
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 5px;
 }
 
@@ -49,6 +51,27 @@ header a {
     margin-left:8px;
     font-weight: 500;
 }
+
+/* Dropdown menu */
+nav {
+  background-color: lightblue;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: none;
+}
+
+/* Nav toggle /// Same code used as in Love-Runner example project*/
+#nav-toggle:checked ~ nav {
+  display: block;
+}
+#nav-toggle {
+  display: none;
+}
+.nav-toggle-label {
+  font-size: 2rem;
+}
+
+
 
 /* Main content */
 main {
