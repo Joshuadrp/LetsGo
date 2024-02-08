@@ -95,7 +95,36 @@ main {
 
 /* Footer */
 footer {
-  background-color: lightyellow;
+  background:#393e46;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#about{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px 5px 5px 5px;
+  gap:2px;
+  width: 100%;
+  align-items: center;
+}
+
+#footer-icons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px 5px 5px 5px;
+  gap:10px;
+  width: 100%;
+  align-items: center;
+}
+
+.footer a{
+  text-decoration: none;
+  color: #f1f1f1;
 }
 
 /* Media Query for tablet size */
