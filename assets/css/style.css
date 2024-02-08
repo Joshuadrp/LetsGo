@@ -87,7 +87,7 @@ nav {
 
 /* Main content */
 main {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   flex: 1 0 auto;
   margin-top: 65px;
   overflow-y: auto;
@@ -121,14 +121,21 @@ footer {
   width: 100%;
   align-items: center;
 }
+#footer-icons > h4{
+  color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+}
+#footer-icons > a{
+  color: #f1f1f1;
+}
 
-.footer a{
+#about > a{
   text-decoration: none;
   color: #f1f1f1;
 }
 
 /* Media Query for tablet size */
-
 @media screen and (min-width: 768px) {
   header {
     justify-content: space-between;
@@ -158,4 +165,23 @@ footer {
   main {
     margin-top: 45px;
   }
+
+  /* footer for tablets and -- desktops?*/
+  #about{
+    justify-content: flex-start;
+  }
+
+  #footer-icons{
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+  #footer-icons > h4{
+    text-align: end;
+  }
+
+  .footer{
+    border-right: 1px solid #f1f1f1;
+    padding-right: 10px;
+  }
+
 }
