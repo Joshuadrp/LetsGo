@@ -19,6 +19,12 @@ body {
   /* color: #3a3a3a; */
   font-family: "Roboto", sans-serif;
 }
+a{
+  text-decoration: none;
+}
+h2{
+  color: #f1f1f1;
+}
 
 /* Header */
 header {
@@ -88,9 +94,30 @@ nav {
 /* Main content */
 main {
   /* background-color: lightgreen; */
+  background-color: #6b9ac4;
   flex: 1 0 auto;
   margin-top: 65px;
   overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+#europe{
+  background: url("../images/europe.png") no-repeat center center/cover;
+  width: 100%;
+}
+#asia{
+  background: url("../images/asia.png") no-repeat center center/cover;
+  width: 100%;
+}
+#north-america{
+  background: url("../images/north-america.png") no-repeat center center/cover;
+  width: 100%;
+}
+#south-america{
+  background: url("../images/south-america.png") no-repeat center center/cover;
+  width: 100%;
 }
 
 /* Footer */
