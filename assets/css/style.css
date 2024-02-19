@@ -37,7 +37,7 @@ header {
   justify-content: center;
   align-items: center;
   top: 0;
-  gap: 3px;
+  gap: 10px;
 }
 
 header a {
