@@ -101,7 +101,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px;
+  gap: 5px;
 }
 
 #hero {
@@ -123,6 +123,26 @@ main {
   right: 0;
 }
 
+/* Experiences Section */
+
+#experiences {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+#experiences div {
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.my-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
 
 
 /* Footer */
