@@ -148,7 +148,7 @@ main {
   /* color: white; */
   border: #b5c0d0 solid;
 }
-img {
+.img-exp{
   opacity: 0.5;
   height: 100%;
   width: 100%;
@@ -162,19 +162,11 @@ img {
 }
 
 /* JOIN US PAGE STYLES */
-
-/* signup section */
 #sign-main {
   display: flex;
   flex: 1 0 auto;
   flex-direction: column;
   margin-top: 65px;
-}
-#sign-second {
-  display: flex;
-  flex-direction: column;
-  margin-top: 65px;
-  background-color: rgba(60, 60, 60, 0.2);
 }
 #signup {
   background: url("../images/zu.jpg");
@@ -205,14 +197,29 @@ img {
   background-color: #fefbf6;
   padding: 5%;
 }
+
+/* SIGNED PAGE STYLES */
+#sign-second {
+  display: flex;
+  flex-direction: column;
+  margin-top: 65px;
+  padding: 5%;
+}
 #signed {
   padding: 10%;
   word-spacing: 2px;
   font-size: 150%;
   text-align: left;
+  background-color: rgba(60, 60, 60, 0.2);
+  border-radius: 10px;
 }
 
-/* Footer */
+/* GALLERY PAGE STYLES */
+#photos img{
+  width: 100%;
+}
+
+/* FOOTER */
 footer {
   background: #393e46;
   width: 100%;
