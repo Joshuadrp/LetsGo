@@ -23,7 +23,9 @@ a {
   text-decoration: none;
 }
 h2 {
-  color: #f1f1f1;
+  color: #0F1035;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* Header */
@@ -118,9 +120,10 @@ main {
   background-color: lightcoral;
   text-align: center;
   padding-inline: 10px;
-  opacity: 0.85;
+  opacity: 0.7;
   bottom: 0;
   right: 0;
+  padding-block: 15px;
 }
 
 /* Experiences Section */
@@ -131,15 +134,23 @@ main {
   flex-wrap: wrap;
   gap:5px;
 }
+
+#exp-title{
+  padding-block: 15px;
+  background-color: #FBF9F1;
+  letter-spacing: 1px;
+}
+
 .container {
   position: relative;
   text-align: center;
   width: 100%;
   height: 200px;
   /* color: white; */
+  border: #B5C0D0 solid;
 }
 img{
-  opacity: 0.7;
+  opacity: 0.5;
   height: 100%;
   width: 100%;
 }
