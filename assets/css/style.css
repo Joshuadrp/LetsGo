@@ -144,7 +144,7 @@ main {
   position: relative;
   text-align: center;
   width: 100%;
-  height: 200px;
+  height: 265px;
   /* color: white; */
   border: #b5c0d0 solid;
 }
@@ -172,19 +172,20 @@ main {
   background: url("../images/zu.jpg");
   background-size: cover;
   background-position: center;
-  padding: 8%;
+  padding: 5%;
   flex-grow: 1;
 }
 #signup-form {
   background-color: rgba(60, 60, 60, 0.8);
-  padding: 23px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 8%; 
+  border-radius: 15px; 
 }
-.form-element {
-  padding-top: 10px;
+.form-element{
+  text-align: right; 
+  padding: 8%; 
+}
+#button{
+  text-align: center;
 }
 #radio-buttons {
   display: flex;
@@ -194,7 +195,6 @@ main {
 .join-button {
   border-radius: 10px;
   font-size: 100%;
-  background-color: #fefbf6;
   padding: 5%;
 }
 
