@@ -215,8 +215,19 @@ main {
 }
 
 /* GALLERY PAGE STYLES */
+#gallery{
+display: flex;
+flex-direction: column;
+}
+#gallery>h2{
+  padding:5%;
+  text-transform: none;
+}
 #photos img{
   width: 100%;
+}
+#photos{
+  line-height: 0;
 }
 
 /* FOOTER */
