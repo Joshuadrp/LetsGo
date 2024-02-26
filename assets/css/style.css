@@ -128,10 +128,17 @@ main {
 
 /* Experiences Section */
 
+/* Container holding the image and the text */
 #experiences{
   display: flex;
   flex-wrap: wrap;
   gap:5px;
+}
+
+#exp-title{
+  padding-block: 15px;
+  background-color: #FBF9F1;
+  letter-spacing: 1px;
 }
 
 .container {
@@ -142,12 +149,12 @@ main {
   /* color: white; */
   border: #B5C0D0 solid;
 }
-.img{
+img{
   opacity: 0.5;
   height: 100%;
   width: 100%;
 }
-
+/* Centered text */
 .centered {
   position: absolute;
   top: 50%;
