@@ -40,63 +40,72 @@
       </nav>
     </header>
 
-    <main>
+    <main id="sign-main">
       <section id="signup">
-        <form method="GET" action="signed.html">
-          <label for="first_name">First Name</label>
-          <input
-            type="text"
-            name="first_name"
-            id="first_name"
-            class="text-input"
-            required
-          />
-          <br />
-          <label for="last_name">Last Name</label>
-          <input
-            type="text"
-            name="last_name"
-            id="last_name"
-            class="text-input"
-            required
-          />
-          <br />
-          <label for="email_address">Email Address</label>
-          <input
-            type="email"
-            name="email_address"
-            id="email_address"
-            class="text-input"
-            required
-          />
-          <br />
-          <h4>Do you want a special agent to contact you?</h4>
-          <div>
-            <div>
-              <label for="yes">Yes</label>
-              <input
-                type="radio"
-                name="preference"
-                id="yes"
-                value="yes"
-                required
-              
-              />
-            </div>
-            <div>
-              <label for="no">No</label>
-              <input
-                type="radio"
-                name="preference"
-                id="no"
-                value="no"
-                required
-            
-              />
-            </div>
+        <form method="GET" action="signed.html" id="signup-form">
+          <h2>You want to be a part of our community? Go ahead.</h2>
+
+          <div class="form-element">
+            <label for="first_name"><strong>First Name</strong></label>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              class="text-input"
+              required
+            />
           </div>
 
-          <button type="submit" class="join-button">Let's Run!</button>
+          <div class="form-element">
+            <label for="last_name"><strong>Last Name</strong></label>
+            <input
+              type="text"
+              name="last_name"
+              id="last_name"
+              class="text-input"
+              required
+            />
+          </div>
+
+          <div class="form-element">
+            <label for="email_address"><strong>Email Address</strong></label>
+            <input
+              type="email"
+              name="email_address"
+              id="email_address"
+              class="text-input"
+              required
+            />
+          </div>
+
+          <div class="form-element">
+            <h4>Do you want a special agent to contact you?</h4>
+            <div id="radio-buttons" class="form-element">
+              <div>
+                <label for="yes"><strong>Yes</strong></label>
+                <input
+                  type="radio"
+                  name="preference"
+                  id="yes"
+                  value="yes"
+                  required
+                />
+              </div>
+              <div>
+                <label for="no"><strong>No</strong></label>
+                <input
+                  type="radio"
+                  name="preference"
+                  id="no"
+                  value="no"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-element">
+            <button type="submit" class="join-button"><strong>Let's Travel!</strong></button>
+          </div>
         </form>
       </section>
     </main>
