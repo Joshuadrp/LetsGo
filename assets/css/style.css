@@ -167,11 +167,12 @@ main {
   flex: 1 0 auto;
   flex-direction: column;
   margin-top: 65px;
-}
-#signup {
   background: url("../images/zu.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+#signup {
   padding: 5%;
   flex-grow: 1;
 }
@@ -181,7 +182,7 @@ main {
   border-radius: 15px; 
 }
 .form-element{
-  text-align: right; 
+  text-align: left; 
   padding: 8%; 
 }
 #button{
@@ -270,56 +271,4 @@ footer {
 #about > a {
   text-decoration: none;
   color: #f1f1f1;
-}
-
-/* Media Query for tablet size */
-@media screen and (min-width: 768px) {
-  header {
-    justify-content: space-between;
-  }
-  header > a {
-    padding-left: 10px;
-    font-size: 120%;
-  }
-  #favicon-if {
-    display: inline;
-  }
-  #navigation {
-    margin-bottom: 0;
-  }
-  nav {
-    display: block;
-    box-shadow: none;
-    width: fit-content; /* Key to get nav to the right*/
-    padding-right: 15px;
-    font-size: 120%;
-  }
-
-  .nav-toggle-label {
-    display: none;
-  }
-  /* Main styles for after */
-  main {
-    margin-top: 45px;
-  }
-
-  /* footer for tablets and -- desktops?*/
-  #about {
-    justify-content: flex-start;
-    font-size: 120%;
-  }
-
-  #footer-icons {
-    justify-content: flex-end;
-    padding-right: 20px;
-    font-size: 120%;
-  }
-  #footer-icons > h4 {
-    text-align: end;
-  }
-
-  .footer {
-    border-right: 1px solid #f1f1f1;
-    padding-right: 10px;
-  }
 }
