@@ -15,8 +15,6 @@ body {
   justify-content: space-evenly;
   min-height: 100vh;
   background: #f1f1f1;
-  /* Generic project styles */
-  /* color: #3a3a3a; */
   font-family: "Roboto", sans-serif;
 }
 a {
@@ -298,6 +296,9 @@ footer {
   #radio-buttons{
     padding-top: 50px;
   }
+  .radio-element{
+    gap:25px;
+  }
 
 } 
 
@@ -345,6 +346,18 @@ footer {
 /* General aspect looks bad */
 @media screen and (min-width: 768px){
  /* INDEX PAGE */
+ /* Header */
+ #logo{
+  font-size: 300%;
+ }
+ .burger{
+  font-size: 150%;
+  padding-left: 15px;
+ }
+ #navigation{
+  font-size: 160%;
+ }
+
  /* Experiences section */
  #experiences{
   justify-content: space-evenly;
@@ -365,6 +378,20 @@ footer {
   font-size: 150%;
   gap:20px;
 }
+
+/* JOIN US PAGE */
+.form-element{
+  font-size: 145%;
+}
+.form-element>input,h4{
+  font-size: 135%;
+  height: 35px;
+}
+.join-button{
+  width: 80%;
+  font-size: 150%;
+}
+
 }
 /* General aspect looks bad */
 @media screen and (min-width: 1024px){
