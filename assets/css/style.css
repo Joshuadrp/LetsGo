@@ -91,8 +91,8 @@ nav {
   font-size: 2rem;
 }
 
-/* Main content */
-main {
+/* INDEX PAGE */
+#home {
   flex: 1 0 auto;
   margin-top: 65px;
   overflow-y: auto;
@@ -120,7 +120,7 @@ main {
   bottom: 0;
   right: 0;
   padding-block: 15px;
-  font-size:120%;
+  font-size: 120%;
 }
 
 /* Experiences Section */
@@ -144,7 +144,7 @@ main {
   height: 100%;
   width: 100%;
 }
-.img-exp{
+.img-exp {
   opacity: 0.5;
   height: 100%;
   width: 100%;
@@ -158,31 +158,37 @@ main {
   transform: translate(-50%, -50%);
   font-size: 123%;
 }
-/* JOIN US PAGE STYLES */
-#sign-main {
+
+/* JOIN US PAGE */
+#join-main{
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
   margin-top: 65px;
   background: url("../images/zu.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
 }
 #signup {
- padding: 4%;
+  
+  padding: 8%;
 }
 
 #signup-form {
   background-color: rgba(60, 60, 60, 0.8);
-  padding: 8%; 
-  border-radius: 15px; 
+  padding: 8%;
+  border-radius: 15px;
 }
-.form-element{ 
+.form-element {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 3px;
-  padding: 8%; 
+  padding: 8%;
 }
-#button{
+#button {
   text-align: center;
 }
 #radio-buttons {
@@ -213,19 +219,13 @@ main {
 }
 
 /* GALLERY PAGE STYLES */
-#gallery{
-display: flex;
-flex-direction: column;
+section > h2 {
+  margin-top: 65px;
+  padding: 5%;
+  background-color: #eeeeee;
 }
-#gallery>h2{
-  padding:5%;
-  text-transform: none;
-}
-#photos img{
+#gallery > img {
   width: 100%;
-}
-#photos{
-  line-height: 0;
 }
 
 /* FOOTER */
@@ -273,128 +273,158 @@ footer {
 
 /* MEDIA QUERIES!!! */
 
-
 /* Just for the form */
-@media screen and (min-width:350px){
+@media screen and (min-width: 350px) {
   #signup {
     padding-top: 12%;
-   }
-} 
+  }
+}
 
 /* Main text size increase and form text increase */
-@media screen and (min-width:400px){
-  .centered h3,p{
+@media screen and (min-width: 400px) {
+  .centered h3,
+  p {
     font-size: 130%;
   }
-  .form-element{
+  .form-element {
     font-size: 120%;
   }
-  .form-element>input,h4{
+  .form-element > input,
+  h4 {
     font-size: 120%;
     height: 28px;
-  };
-  #radio-buttons{
+  }
+  #radio-buttons {
     padding-top: 50px;
   }
-  .radio-element{
-    gap:25px;
+  .radio-element {
+    gap: 25px;
   }
-
-} 
+}
 
 /* Images in main look bad including hero image, text too small*/
 
-@media screen and (min-width: 460px){
+@media screen and (min-width: 460px) {
   /* INDEX PAGE */
-   /* hero img */
-   #hero{
-    background-position: center top ;
+  /* hero img */
+  #hero {
+    background-position: center top;
   }
-  #intro{
+  #intro {
     width: 30%;
   }
   /* FOOTER */
-  #about{
+  #about {
     flex-direction: row;
   }
-  .footer-a{
+  .footer-a {
     border-right: 2px solid #f1f1f1;
     padding-right: 3px;
   }
-  .footer-w{
+  .footer-w {
     padding-left: 3px;
   }
 
   /* JOINUS PAGE */
   #signup {
     padding-top: 8%;
-   }
+  }
 }
 
 /* FOOTER*/
 @media screen and (min-width: 579px) {
-  .footer-w{
+  .footer-w {
     padding-right: 3px;
   }
-  .footer-s{
+  .footer-s {
     border-left: 2px solid #f1f1f1;
     padding-left: 3px;
   }
 }
 
-
 /* General aspect looks bad */
-@media screen and (min-width: 768px){
- /* INDEX PAGE */
- /* Header */
- #logo{
-  font-size: 300%;
- }
- .burger{
-  font-size: 150%;
-  padding-left: 15px;
- }
- #navigation{
-  font-size: 160%;
- }
+@media screen and (min-width: 768px) {
+  /* INDEX PAGE */
+  /* Header */
+  #logo {
+    font-size: 300%;
+  }
+  .burger {
+    font-size: 150%;
+    padding-left: 15px;
+  }
+  #navigation {
+    font-size: 160%;
+  }
 
- /* Experiences section */
- #experiences{
-  justify-content: space-evenly;
-  gap: 0;
- }
- 
- .container{
-  width: 49.5%;
- }
- .centered h3,p{
-  font-size: 110%;
-}
-/* FOOTER */
-#about{
-  font-size: 125%;
-}
-#footer-icons{
-  font-size: 150%;
-  gap:20px;
-}
+  /* Experiences section */
+  #experiences {
+    justify-content: space-evenly;
+    gap: 0;
+  }
 
-/* JOIN US PAGE */
-.form-element{
-  font-size: 145%;
-}
-.form-element>input,h4{
-  font-size: 135%;
-  height: 35px;
-}
-.join-button{
-  width: 80%;
-  font-size: 150%;
-}
+  .container {
+    width: 49.5%;
+  }
+  .centered h3,
+  p {
+    font-size: 110%;
+  }
+  /* FOOTER */
+  #about {
+    font-size: 125%;
+  }
+  #footer-icons {
+    font-size: 150%;
+    gap: 20px;
+  }
 
+  /* JOIN US PAGE */
+  .form-element {
+    font-size: 145%;
+  }
+  .form-element > input,
+  h4 {
+    font-size: 135%;
+    height: 35px;
+  }
+  .join-button {
+    width: 80%;
+    font-size: 150%;
+  }
+  /* GALLERY PAGE */
+  section > h2 {
+    font-size: 150%;
+  }
+  #gallery {
+    column-count: 2;
+    column-gap: 0;
+  }
 }
 /* General aspect looks bad */
-@media screen and (min-width: 1024px){
-  
-}
+@media screen and (min-width: 1024px) {
+  /* INDEX PAGE */
+  /* Hero */
+  #hero {
+    background-position: center center;
+  }
+  /* JOIN US PAGE */
+    #signup{
+    position:relative;
+   }
 
+   #signup-form{
+    max-width: 500px;
+    left: 10%;
+    padding: 2%;
+   } 
+   .form-element > input,
+  h4 {
+    font-size: 110%;
+    height: 35px;
+  }
+  /* GALLERY PAGE */
+  #gallery {
+    column-count: 3;
+  }
+}
