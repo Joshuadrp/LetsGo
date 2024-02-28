@@ -95,8 +95,6 @@ nav {
 
 /* Main content */
 main {
-  /* background-color: lightgreen; */
-  /* background-color: #6b9ac4; */
   flex: 1 0 auto;
   margin-top: 65px;
   overflow-y: auto;
@@ -124,6 +122,7 @@ main {
   bottom: 0;
   right: 0;
   padding-block: 15px;
+  font-size:120%;
 }
 
 /* Experiences Section */
@@ -135,8 +134,7 @@ main {
 }
 
 #exp-title {
-  padding-block: 15px;
-  background-color: #fbf9f1;
+  padding-top: 25px;
   letter-spacing: 1px;
 }
 
@@ -156,16 +154,14 @@ main {
 
 .centered {
   position: absolute;
+  width: 80%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 123%;
 }
-
 /* JOIN US PAGE STYLES */
 #sign-main {
-  display: flex;
-  flex: 1 0 auto;
-  flex-direction: column;
   margin-top: 65px;
   background: url("../images/zu.jpg");
   background-size: cover;
@@ -173,16 +169,19 @@ main {
   background-repeat: no-repeat;
 }
 #signup {
-  padding: 5%;
-  flex-grow: 1;
+ padding: 4%;
 }
+
 #signup-form {
   background-color: rgba(60, 60, 60, 0.8);
   padding: 8%; 
   border-radius: 15px; 
 }
-.form-element{
-  text-align: left; 
+.form-element{ 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3px;
   padding: 8%; 
 }
 #button{
@@ -243,6 +242,7 @@ footer {
 #about {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   margin: 5px 5px 5px 5px;
   gap: 2px;
@@ -272,3 +272,84 @@ footer {
   text-decoration: none;
   color: #f1f1f1;
 }
+
+/* MEDIA QUERIES */
+
+/* Just for the form */
+@media screen and (min-width:350px){
+  #signup {
+    padding-top: 12%;
+   }
+} 
+
+/* Main text size increase and form text increase */
+@media screen and (min-width:400px){
+  .centered h3,p{
+    font-size: 130%;
+  }
+  .form-element{
+    font-size: 120%;
+  }
+  .form-element>input,h4{
+    font-size: 120%;
+    height: 28px;
+  };
+  #radio-buttons{
+    padding-top: 50px;
+  }
+
+} 
+
+/* Images in main look bad including hero image, text too small*/
+
+@media screen and (min-width: 460px){
+  /* SIGNUP PAGE */
+  #signup {
+    padding-top: 8%;
+   }
+   /* FOOTER */
+  #about{
+    flex-direction: row;
+  }
+  .footer-a{
+    border-right: 2px solid #f1f1f1;
+    padding-right: 3px;
+  }
+  .footer-w{
+    padding-left: 3px;
+  }
+
+  /* Main page hero img */
+  #hero{
+    background-position: center top ;
+  }
+
+  /* Main Page Experiences Section */
+  #experiences{
+    gap:25px;
+  }
+  .img-exp{
+    height: 110%;
+  }
+}
+
+/* Only for footer */
+@media screen and (min-width: 579px) {
+  .footer-w{
+    padding-right: 3px;
+  }
+  .footer-s{
+    border-left: 2px solid #f1f1f1;
+    padding-left: 3px;
+  }
+}
+
+/* General aspect looks bad */
+@media screen and (min-width: 768px){
+
+}
+/* General aspect looks bad */
+@media screen and (min-width: 1024px){
+  
+}
+
