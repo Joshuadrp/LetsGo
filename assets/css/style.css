@@ -444,6 +444,9 @@ footer {
   #hero {
     background-position: center center;
   }
+  #purpose{
+    font-size: 200%;
+  }
   /* JOIN US PAGE */
     #signup{
     position:relative;
