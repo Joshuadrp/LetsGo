@@ -47,24 +47,12 @@
 
           <div class="form-element">
             <label for="first_name"><strong>First Name</strong></label>
-            <input
-              type="text"
-              name="first_name"
-              id="first_name"
-              class="text-input"
-              required
-            />
+            <input type="text" name="first_name" id="first_name" required />
           </div>
 
           <div class="form-element">
             <label for="last_name"><strong>Last Name</strong></label>
-            <input
-              type="text"
-              name="last_name"
-              id="last_name"
-              class="text-input"
-              required
-            />
+            <input type="text" name="last_name" id="last_name" required />
           </div>
 
           <div class="form-element">
@@ -73,9 +61,21 @@
               type="email"
               name="email_address"
               id="email_address"
-              class="text-input"
               required
             />
+          </div>
+
+          <div class="form-element">
+            <label for="know-you"
+              ><strong>Tell us a bit about yourself:</strong></label
+            >
+            <textarea
+              id="know-you"
+              name="know-you"
+              rows="4"
+              cols="50"
+              required
+            ></textarea>
           </div>
 
           <div class="form-element radio-element">
@@ -104,7 +104,9 @@
             </div>
           </div>
           <div id="button">
-            <button type="submit" class="join-button"><strong>Let's Travel!</strong></button>
+            <button type="submit" class="join-button">
+              <strong>Let's Travel!</strong>
+            </button>
           </div>
         </form>
       </section>
@@ -116,7 +118,7 @@
         <a href="joinus.html" class="footer-w">Want to join?</a>
         <a href="gallery.html" class="footer-s">Start Exploring</a>
       </div>
-      
+
       <div id="footer-icons">
         <a href="https://www.google.com/travel/flights" target="_blank"
           ><i class="fab fa-google"></i

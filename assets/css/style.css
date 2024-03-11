@@ -199,12 +199,12 @@ nav {
 
 }
 #signup {
-  padding: 4%;
+  padding: 3%;
 }
 
 #signup-form {
-  background-color: rgba(60, 60, 60, 0.8);
-  padding: 4%;
+  background-color: rgba(60, 60, 60, 0.6);
+  padding: 3%;
   border-radius: 15px;
 }
 .form-element {
@@ -212,7 +212,7 @@ nav {
   flex-direction: column;
   text-align: center;
   gap: 3px;
-  padding: 4%;
+  padding: 3%;
 }
 #button {
   text-align: center;
@@ -221,6 +221,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  font-size: 120%;
 }
 .join-button {
   border-radius: 10px;
@@ -319,9 +320,6 @@ footer {
   h4 {
     font-size: 120%;
     height: 28px;
-  }
-  #radio-buttons {
-    padding-top: 50px;
   }
   .radio-element {
     gap: 25px;
