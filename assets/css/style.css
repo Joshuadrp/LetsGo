@@ -22,7 +22,6 @@ a {
 }
 h2 {
   color: #000000;
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -135,6 +134,7 @@ nav {
 .exp-title {
   margin: 5%;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 #experiences {
@@ -182,7 +182,6 @@ nav {
 .profile{
   text-align: center;
   padding: 2%;
-  border:solid #FBF9F1 2px;
 }
 
 
@@ -200,13 +199,12 @@ nav {
 
 }
 #signup {
-  
-  padding: 8%;
+  padding: 4%;
 }
 
 #signup-form {
   background-color: rgba(60, 60, 60, 0.8);
-  padding: 8%;
+  padding: 4%;
   border-radius: 15px;
 }
 .form-element {
@@ -214,7 +212,7 @@ nav {
   flex-direction: column;
   text-align: center;
   gap: 3px;
-  padding: 8%;
+  padding: 4%;
 }
 #button {
   text-align: center;
@@ -396,7 +394,7 @@ footer {
   }
   .centered h3,
   p {
-    font-size: 100%;
+    font-size: 110%;
   } 
   /* Profiles section */
   #profiles{
@@ -445,7 +443,16 @@ footer {
     background-position: center center;
   }
   #purpose{
-    font-size: 200%;
+    font-size: 120%;
+  }
+
+  .centered h3,
+  p {
+    font-size: 140%;
+  }
+
+  .exp-title{
+    font-size: 135%;
   }
   /* JOIN US PAGE */
     #signup{
