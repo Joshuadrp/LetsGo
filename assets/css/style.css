@@ -42,7 +42,9 @@ header {
 header a {
   text-decoration: none;
   color: inherit;
+  padding-top: 5px;
 }
+
 
 #navigation {
   list-style: none;
@@ -371,14 +373,14 @@ footer {
   /* INDEX PAGE */
   /* Header */
   #logo {
-    font-size: 300%;
+    font-size: 200%;
   }
   .burger {
-    font-size: 150%;
+    font-size: 100%;
     padding-left: 15px;
   }
   #navigation {
-    font-size: 160%;
+    font-size: 120%;
   }
 
   /* Experiences section */
@@ -436,6 +438,17 @@ footer {
 /* General aspect looks bad */
 @media screen and (min-width: 1024px) {
   /* INDEX PAGE */
+  /* nav */
+  #logo {
+    font-size: 250%;
+  }
+  .burger {
+    font-size: 130%;
+    padding-left: 15px;
+  }
+  #navigation {
+    font-size: 125%;
+  }
   /* Hero */
   #hero {
     background-position: center center;
