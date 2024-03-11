@@ -216,6 +216,10 @@ nav {
   gap: 3px;
   padding: 3%;
 }
+.form-element > label,
+.form-element > h4 {
+  font-size: 130%;
+}
 #button {
   text-align: center;
 }
@@ -231,10 +235,12 @@ nav {
   padding: 5%;
 }
 
+
 /* SIGNED PAGE STYLES */
-#sign-second {
+#signed-main{
   display: flex;
   flex-direction: column;
+  flex: 1 0 auto;
   margin-top: 65px;
   padding: 5%;
 }
@@ -246,6 +252,7 @@ nav {
   background-color: rgba(60, 60, 60, 0.2);
   border-radius: 10px;
 }
+
 
 /* GALLERY PAGE STYLES */
 section > h2 {
@@ -316,12 +323,15 @@ footer {
     font-size: 130%;
   }
   .form-element {
-    font-size: 120%;
+    font-size: 105%;
   }
   .form-element > input,
   h4 {
-    font-size: 120%;
+    font-size: 105%;
     height: 28px;
+  }
+  .form-element > textarea{
+    font-size: 115%;
   }
   .radio-element {
     gap: 25px;
@@ -414,17 +424,10 @@ footer {
   }
 
   /* JOIN US PAGE */
-  .form-element {
-    font-size: 145%;
-  }
-  .form-element > input,
-  h4 {
-    font-size: 135%;
-    height: 35px;
-  }
+  
   .join-button {
     width: 80%;
-    font-size: 150%;
+    font-size: 135%;
   }
   /* GALLERY PAGE */
   section > h2 {
