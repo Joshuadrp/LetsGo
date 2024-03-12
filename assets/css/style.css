@@ -134,9 +134,10 @@ nav {
 
 /* Experiences and Profiles Section */
 .exp-title {
-  margin: 5%;
+  padding: 3%;
   letter-spacing: 1px;
   text-align: center;
+  background-color: #FF8080;
 }
 
 #experiences {
@@ -179,13 +180,17 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 5px;
+  border: 2px solid lightcoral;
 }
 
 .profile{
-  text-align: center;
+  text-align: left;
   padding: 2%;
+  
 }
-
+#members-info{
+  padding-left: 27%;
+}
 
 
 /* JOIN US PAGE */
