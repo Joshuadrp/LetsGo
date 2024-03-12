@@ -104,7 +104,7 @@ nav {
 }
 
 #hero {
-  background: url("../images/hero.jpg") no-repeat center center/cover;
+  background: url("../images/hero.webp") no-repeat center center/cover;
   height: 517px;
   width: 100%;
   position: relative;
@@ -194,7 +194,7 @@ nav {
   flex: 1 0 auto;
   flex-direction: column;
   margin-top: 65px;
-  background: url("../images/zu.jpg");
+  background: url("../images/zu.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
