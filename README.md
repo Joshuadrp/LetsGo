@@ -1,4 +1,3 @@
-
 # WORLDROAMERS.
 
 This website is for those who want more. Not necessarily money, wealth, but something far more valuable than those things. I'm talking about experiences. 
@@ -24,6 +23,7 @@ You will be able to read about other people perspective of a certain place, mayb
 ### [Bugs](#bugs-1)
 ### [Technologies Used](#technologies-used-1)
 ### [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used-1)
+### [Deployment and local development](#deployment-and-local-development-1)
 ### [Credits](#credits-1)
 ### [Acknowledgements](#acknowledgements-1)
 ---
@@ -63,7 +63,9 @@ Users can join WorldRoamers community, via the join us page! We have a gallery, 
     * Notes taken in notebook.
 
  * Imagery used:
-    * All the images in this website were taken by its author, Joshua Rodriguez. The camera used is a Canon EOS RP, mirrorless camera with a 105mm lens and a 300mm lens. The photos were taken in several different countries.
+    * All the images in this website were taken by its author, Joshua Rodriguez. The camera used is a Canon EOS RP, mirrorless camera with a 105mm lens and a 300mm lens. The photos were taken in several countries.
+ * Color scheme:
+    * The colors used were chosen by the developer. The idea was to give an "alive" and "fun" feeling to the website. Color Hunt page was used to get these colors.      
   
 ---
 ## Features
@@ -71,6 +73,8 @@ Users can join WorldRoamers community, via the join us page! We have a gallery, 
 * This website is for people that want to travel the world.
 * They can find out where and how, with help of our community members if they join.
 * Responsiveness.
+* Sign In form.
+* Functional links.
 
 ### Existing Features
  
@@ -157,10 +161,10 @@ The W3C Markup Validator and W3C CSS Validator services were used to validate ev
 ![Gallery Page](/assets/images/readme-imgs/html-val.png)
 </details>
 <details>
-<summary>joinus.html
+<summary>join-us.html
 </summary>
 
-![JoinUs Page](/assets/images/readme-imgs/html-val.png)
+![Join-Us Page](/assets/images/readme-imgs/html-val.png)
 </details>
 <details>
 <summary>signed.html
@@ -183,10 +187,13 @@ The W3C Markup Validator and W3C CSS Validator services were used to validate ev
 
 ### Manual Testing
 
+* Tested Navbar links, all redirecting to the right url.
+* When clicking social media pages, they open in a new window. 
+* Form gets submitted and confirmation page shows.
+* Active links are highlighted in the proper url.
 * The website was tested on Google Chrome, safari and microsoft edge.
 * Tested in a monitor 1920x1080px, mobile phones Iphone 14 and Samsung Galaxy S21.
 * Asked friends to open it on their phones and got feedback from them which then I applied to the site.
-* Dev tools in chrome were used to apply responsiveness. 
 
 ### Lighthouse Report
 
@@ -207,7 +214,7 @@ The W3C Markup Validator and W3C CSS Validator services were used to validate ev
 <summary>Sign Up
 </summary>
 
-![JoinUs Page](/assets/images/readme-imgs/mobile-joinus.png)
+![Join-Us Page](/assets/images/readme-imgs/mobile-join-us.png)
 </details>
 <details>
 <summary>Signed
@@ -239,7 +246,7 @@ The W3C Markup Validator and W3C CSS Validator services were used to validate ev
 <summary>Sign Up
 </summary>
 
-![JoinUs Page](/assets/images/readme-imgs/desktop-joinus.png)
+![Join-Us Page](/assets/images/readme-imgs/desktop-join-us.png)
 </details>
 <details>
 <summary>Signed
@@ -258,10 +265,9 @@ The W3C Markup Validator and W3C CSS Validator services were used to validate ev
 ## Bugs
 
 * Bugs Fixed:
-    * **Background Image.** Wanted to give an opacity to this image. But I couldn't make the image opaque and the text solid or not opaque.So instead an IMG html element was added.
-    * **Text not on top of IMG**. I wanted to display text on top of an opaque img, and it took me a while to figure out. I had to play with the position and used a CSS property called transform. I used stack overflow to get through this. 
-* Known bugs:
-    * Form is not getting submitted on the deployed page, but it works when I run the website from the IDE. This might be due to the action of the form. Perhaps I need to use an absolute path insted of the relative path. 
+    * **Background Image.** Wanted to give an opacity to the background image. By doing this, elements inside the parent container were opaque as well. Added an IMG element in the html insted of using a backgroung property in the css file.
+    * **Text not on top of IMG.** IMG element pushed down my other elements as its a block element. Did some research and in stack overflow found a solution using the transform property and playing with the elements position.   
+    * **Form not submitting**. Wrong path used, a slash in front of the html name page. E.g /signed.html. Removed slash and worked properly.
 ---
 
 ## Technologies Used
@@ -288,6 +294,31 @@ The W3C Markup Validator and W3C CSS Validator services were used to validate ev
 
 ---
 
+## Deployment and local development
+
+### GitHub Pages
+
+***Github was used for website deployment***
+
+1. Log in to repository, in this case we are going to use this website as an example (https://github.com/Joshuadrp/LetsGo.git).
+2. Once there, go to the top center right, and click ***settings***.
+3. Locate column on the left center side, and click on ***pages***.
+4. In Source dropdown menu select ***Deploy from a branch***.
+5. In Branch dropdown menu select ***main*** instead of none and click save.
+6. Wait for a few minutes and on the top center of the page the website link will appear, and a button saying: ***Visit site***
+
+### Gitpod
+
+Gitpod workspace was used. Workspace was created using Github's repository. To get this link: 
+
+1. Go to the desired repository. On the top right center click the ***Code*** button. 
+2. Press Local and select HTTPS. 
+3. Copy link and create workspace in Gitpod.
+4. Happy coding!
+
+---
+
+
 ## Credits
 
 ### Content
@@ -300,3 +331,4 @@ The W3C Markup Validator and W3C CSS Validator services were used to validate ev
 ## Acknowledgements
 
  * Thanks to Amy Richardson and Mitko Bachvarov for always been active and helpful providing important feedback.
+
